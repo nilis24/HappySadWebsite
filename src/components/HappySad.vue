@@ -1,6 +1,6 @@
 <template>
   <div id="background" class="parent red" v-on:click="HandleState">
-    <span id="face" class="text">:(</span>
+    <span id="face" class="text unselectable">:(</span>
   </div>
 </template>
 
