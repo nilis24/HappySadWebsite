@@ -1,6 +1,6 @@
 <template>
   <div id="background" class="parent red" v-on:click="HandleState">
-    <span id="face" class="text">:(</span>
+    <span id="face" class="text unselectable">:(</span>
   </div>
 </template>
 
@@ -49,4 +49,11 @@
     font-weight: bold;
   }
 
+  .unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 </style>
